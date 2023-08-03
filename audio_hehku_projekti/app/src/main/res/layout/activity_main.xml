@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="20dp"
+        android:text="Touch to play!" />
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="248dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/scale_spinner"
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:prompt="@string/scale_prompt" />
+
+        <Spinner
+            android:id="@+id/sample_spinner"
+            android:layout_width="263dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:prompt="@string/sample_prompt" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/touch_view"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:hint="touch to play!">
+
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/imageViewText"
+        android:layout_width="wrap_content"
+        android:layout_height="142dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo_color_audio_hehku" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_above="@+id/imageViewText"
+        android:layout_below="@+id/touch_view"
+        android:layout_alignEnd="@+id/touch_view"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:text="Stop" />
+
+
+</RelativeLayout>

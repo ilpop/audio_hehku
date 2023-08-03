@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Audio_Hehku</string>
+    <string name="audio_hehku">Press to play!</string>
+    <string name="scale_prompt">Select Scale</string>
+    <string name="sample_prompt">Select Sample</string>
+    <string name="audio_permission_granted" />
+</resources>
