@@ -8,7 +8,6 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class OpeningActivity extends AppCompatActivity {
-
     @SuppressLint({"ResourceType", "MissingInflatedId"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +24,6 @@ public class OpeningActivity extends AppCompatActivity {
             }
         });
     }
-
     private void startMainActivity() {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);

@@ -6,7 +6,6 @@ public class Scale {
     private float[] scaleGMajor = {1.0f, 1.122f, 1.259f, 1.334f, 1.498f, 1.682f, 1.888f, 2.0f};
     private float[] scaleGMinor = {1.0f, 1.189f, 1.335f, 1.498f, 1.682f, 1.888f, 2.117f, 2.378f};
     private float[] scaleGBlues = {1.0f, 1.122f, 1.189f, 1.259f, 1.335f, 1.498f, 1.682f, 2.0f};
-
     public float[] getScale(String selectedScale) {
         float[] scale;
 
@@ -30,7 +29,6 @@ public class Scale {
                 scale = scaleGMinor;
                 break;
         }
-
         return scale;
     }
 }

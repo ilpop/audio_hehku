@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
     private int sampleResourceId = 0;
     private Button btnStop;
 
-
     @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -136,16 +135,12 @@ public class MainActivity extends AppCompatActivity {
 
                         currentPitch = pitch; // Update the current pitch value
                     }
-
                     return true;
                 }
                 return false;
             }
-
         });
-
     }
-
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
                                            @NonNull int[] grantResults) {
@@ -155,15 +150,12 @@ public class MainActivity extends AppCompatActivity {
             // Request for camera permission.
             if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
 
-
             } else {
                 // Permission request was denied.
-
             }
         }
         // END_INCLUDE(onRequestPermissionsResult)
     }
-
     @Override
     protected void onDestroy() {
         super.onDestroy();
